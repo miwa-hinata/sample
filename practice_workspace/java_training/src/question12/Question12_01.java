@@ -4,11 +4,8 @@ public class Question12_01 {
 	
 	public static void main(String[] args) {
 		
-		Dog inu=new Dog();
-		
-		inu.name="ダニエル";
-		
-		inu.showname();
-	}
+		Dog dog = new Dog();
 
+		dog.showName("ダニエル");
+	}
 }

@@ -21,7 +21,7 @@
 //【Bankクラス】
 //	・フィールド
 //		- bankCode:String 初期値:"000111"
-//		- bankName:int 初期値:"シェアード銀行"
+//		- bankName:String 初期値:"シェアード銀行"
 //		- depositor:Depositor 
 //	・メソッド
 //		+ showData():戻り値の型 void 
@@ -54,12 +54,34 @@
 
 package day06.q02;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 class Main {
 
 	public static void main(String[] args) throws IOException {
 		/*ここから記入*/
+		BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.println("預金者情報を登録します。");
+		System.out.println("input name? >>");
+		String name=reader.readLine();
+		System.out.println("input money? >>");
+		int money=Integer.parseInt(reader.readLine());
+		
+		Depositor depositor= new Depositor();
+		depositor.setName(name);
+		depositor.setMoney(money);
+		
+		
+		System.out.println("銀行に預金者情報を登録します。");
+		
+		
+		Bank bank=new Bank();
+		bank.setDepositor(depositor);
+		
+		bank.showData();
 
 	}
 
