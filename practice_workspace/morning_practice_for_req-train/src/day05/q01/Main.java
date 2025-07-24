@@ -39,16 +39,20 @@ class Main {
 
 	public static void main(String[] args) throws IOException {
 		/*ここから記入*/
-		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		String str=br.readLine();
-		
 		System.out.println("商品の税込み金額（消費税10％）を計算します。");
 		System.out.println("税抜き金額を入力してください。");
 		System.out.print("input money? >>");
 		
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		String str=br.readLine();
 		int num=Integer.parseInt(str);
+		System.out.println("税抜き価格：\\" + num);
 		
 		
+		CashRegister cr=new CashRegister();
+		cr.calcPrice(num);
+		int I=cr.calcPrice(num);
+		System.out.println("税込み価格：\\" + I);
 
 	}
 
