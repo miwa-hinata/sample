@@ -43,10 +43,17 @@ package day09.q01;
 
 import java.io.IOException;
 
-public class Main {
+public class Main extends JankenBattle {
 
 	public static void main(String[] args) throws IOException {
 		// ここに記述
+		HumanPlayer humanplayer = new HumanPlayer();
+		ComPlayer complayer = new ComPlayer();
+			
+	
+		public static Playable doBattle(humnplayer,complayer) ;
+		
+		
 
 	}
 
