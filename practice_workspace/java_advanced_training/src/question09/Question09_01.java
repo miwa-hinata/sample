@@ -7,9 +7,9 @@ public class Question09_01 {
 		
 		Triangle triangle=new Triangle();
 		
-		triangle.triangleCalc(3,4);
+		int calc =triangle.triangleCalc(3,4);
 		
-		System.out.print("三角形の面積は"+triangle.answer+"です");
+		System.out.print("三角形の面積は"+calc+"です");
 		
 
 	}
