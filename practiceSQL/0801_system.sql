@@ -1,0 +1,4 @@
+ALTER SESSION SET CONTAINER=XEPDB1;
+CREATE USER education_advance IDENTIFIED BY systemsss;
+
+GRANT ALL PRIVILEGES TO education_advance;

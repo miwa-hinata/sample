@@ -1,0 +1,3 @@
+ALTER SESSION SET CONTAINER = XEPDB1;
+CREATE USER console_crud_user IDENTIFIED BY systemsss;
+GRANT ALL PRIVILEGES TO console_crud_user;
