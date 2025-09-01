@@ -1,11 +1,15 @@
 @charset "UTF-8";
-.header{
+header{
 	width: 700px;
 	height: 300px;
 	background-color: #ffdf98;
 	font-size: 42px;
 }
 #container{
+	display: flex;
+	flex-direction: row;
+}
+aside{
 	width: 200px;
 	height: 305px;
 	background-color: #efeadc;
@@ -15,7 +19,7 @@ article{
 	height: 305px;
 	background-color: #ffebcd;
 }
-.footer{
+footer{
 	width: 700px;
 	height: 50px;
 	background-color: #dcdcdc;
